@@ -1,0 +1,1191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.c1 {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* 字体图标 */
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../../source/iconfont/iconfont.eot');
+    src: url('../../source/iconfont/iconfont.eot?#iefix') format('embedded-opentype'), url('../../source/iconfont/iconfont.woff') format('woff'), url('../../source/iconfont/iconfont.ttf') format('truetype'), url('../../source/iconfont/iconfont.svg#iconfont') format('svg');
+}
+
+
+/* ＊＊＊＊＊小屏导航开始 ＊＊＊＊＊*/
+
+@media screen and (max-width:560px) {
+    .nav {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        background: #FFF;
+    }
+    .nav .nav-left {
+        height: 59px;
+        border-bottom: 1px solid #fcfcfc;
+    }
+    /* ***********log*********** */
+    .log {
+        float: left;
+        display: block;
+        background: url("../../image/yue-sprit001.png");
+        width: 105px;
+        height: 50px;
+        background-position: -123px -80px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .zhunye {
+        width: 108px;
+        height: 60px;
+        float: left;
+        padding-left: 10px;
+        line-height: 60px;
+        color: #35c1ec;
+        font-size: 14px;
+    }
+    /*  *＊＊＊菜单图标＊＊＊＊＊＊ */
+    .caidan {
+        font-size: 22px;
+        font-weight: bold;
+        float: right;
+        margin-right: 25px;
+        margin-top: 8px;
+        cursor: pointer;
+        padding: 5px 3px;
+        display: block;
+    }
+    .caidan:hover {
+        border-radius: 6px;
+        background-color: #32c1ed;
+        color: #fff;
+    }
+    .nav-right {
+        position: absolute;
+        /* float:right; */
+        height: 110px;
+        background: #fff;
+        z-index: 1000;
+        width: 100%;
+        /* right:0; */
+    }
+    /* ＊＊＊＊＊＊＊＊＊导航栏＊＊＊＊＊＊＊＊＊ */
+    .nav-right {
+        display: none;
+    }
+    .nav-right .nav-right1 {
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid #f5f5f5;
+    }
+    .nav-right .nav-right1 ul {
+        float: right;
+        width: 300px;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+    .nav-right .nav-right1 ul li {
+        float: left;
+        margin-right: 3px;
+        margin-right: 8px;
+        line-height: 60px;
+    }
+    .nav-right .nav-right1 ul li a {
+        padding: 5px 3px;
+        text-decoration: none;
+        color: #555;
+    }
+    .nav-right .nav-right1 ul li a:hover {
+        background-color: #32c1ed;
+        border-radius: 6px;
+        color: #fff;
+    }
+    /* ＊＊＊＊＊＊＊＊＊＊登录窗 ＊＊＊＊＊＊＊*/
+    .nav-right .denglu {
+        display: block;
+        float: right;
+        width: 100%;
+        height: 60px;
+        padding-top: 13px;
+        background: #fff;
+        margin: 0px;
+        box-shadow: 0px 2px 5px;
+    }
+    .nav-right .denglu a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #555;
+        float: right;
+        padding: 3px 3px;
+        border-radius: 6px;
+    }
+    .nav-right .denglu a:hover {
+        background-color: #32c1ed;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .container__denglu {
+        display: none;
+    }
+}
+
+@media screen and (min-width:560px) and (max-width:768px) {
+    .nav .nav-left {
+        height: 59px;
+        border-bottom: 1px solid #ccc;
+        background: #FFF;
+    }
+    .log {
+        float: left;
+        display: block;
+        background: url("../../image/yue-sprit001.png") no-repeat;
+        width: 122px;
+        height: 50px;
+        background-position: 0px -80px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .zhunye {
+        width: 129px;
+        height: 60px;
+        float: left;
+        font-weight: 400;
+        padding-left: 10px;
+        line-height: 60px;
+        color: #35c1ec;
+        font-size: 17px;
+    }
+    .caidan {
+        padding: 3px 5px;
+        font-size: 22px;
+        font-weight: bold;
+        float: right;
+        margin-right: 25px;
+        margin-top: 9px;
+    }
+    .caidan:hover {
+        border-radius: 6px;
+        background-color: #32c1ed;
+        color: #fff;
+    }
+    /* ＊＊＊＊＊＊＊＊＊导航栏＊＊＊＊＊＊＊＊＊ */
+    .nav-right {
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+        background: #fff;
+        display: none;
+    }
+    .nav-right .nav-right1 {
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid #f5f5f5;
+    }
+    .nav-right .nav-right1 ul {
+        float: right;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+    .nav-right .nav-right1 ul li {
+        float: left;
+        margin-right: 3px;
+        margin-right: 8px;
+        line-height: 60px;
+    }
+    .nav-right .nav-right1 ul li a {
+        padding: 5px 3px;
+        text-decoration: none;
+        color: #555;
+    }
+    .nav-right .nav-right1 ul li a:hover {
+        background-color: #32c1ed;
+        border-radius: 6px;
+        color: #fff;
+    }
+    /* ＊＊＊＊＊＊＊＊＊＊登录窗 ＊＊＊＊＊＊＊*/
+    .nav-right .denglu {
+        display: block;
+        float: right;
+        width: 100%;
+        height: 61px;
+        padding-top: 13px;
+        margin: 0px;
+        box-shadow: 0px 2px 5px;
+    }
+    .nav-right .denglu a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #555;
+        float: right;
+        padding: 3px 3px;
+        border-radius: 6px;
+    }
+    .nav-right .denglu a:hover {
+        background-color: #32c1ed;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:990px) {
+    .nav {
+        width: 100%;
+        height: 80px;
+        position: relative;
+        background: #fff;
+    }
+    .nav .nav-left {
+        height: 80px;
+        border-bottom: 1px solid #ccc;
+    }
+    .caidan {
+        font-size: 22px;
+        font-weight: bold;
+        float: right;
+        margin-right: 25px;
+        margin-top: 21px;
+        padding: 3px 5px;
+    }
+    .caidan:hover {
+        border-radius: 6px;
+        background-color: #32c1ed;
+        color: #fff;
+    }
+    .log {
+        float: left;
+        display: block;
+        background: url("../../image/yue-sprit001.png") no-repeat;
+        width: 152px;
+        height: 60px;
+        background-position: -202px 0px;
+        margin-top: 11px;
+        margin-left: 40px;
+    }
+    .zhunye {
+        font-size: 22px;
+        font-weight: 400;
+        color: #35c1ec;
+        line-height: 80px;
+        margin-left: 10px;
+    }
+    /* ＊＊＊＊＊＊＊＊＊导航栏＊＊＊＊＊＊＊＊＊ */
+    .nav-right {
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+        background: #fff;
+        display: none;
+    }
+    .nav-right .nav-right1 {
+        width: 100%;
+        height: 79px;
+        border-bottom: 1px solid #f5f5f5;
+    }
+    .nav-right .nav-right1 ul {
+        float: right;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+    .nav-right .nav-right1 ul li {
+        float: left;
+        margin-right: 3px;
+        margin-right: 8px;
+        line-height: 79px;
+    }
+    .nav-right .nav-right1 ul li a {
+        padding: 5px 3px;
+        text-decoration: none;
+        color: #555;
+    }
+    .nav-right .nav-right1 ul li a:hover {
+        background-color: #32c1ed;
+        border-radius: 6px;
+        color: #fff;
+    }
+    /* ＊＊＊＊＊＊＊＊＊＊登录窗 ＊＊＊＊＊＊＊*/
+    .nav-right .denglu {
+        display: block;
+        float: right;
+        width: 100%;
+        height: 79px;
+        padding-top: 25px;
+        margin: 0px;
+        box-shadow: 0px 2px 5px;
+    }
+    .nav-right .denglu a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #555;
+        float: right;
+        padding: 3px 3px;
+        border-radius: 6px;
+    }
+    .nav-right .denglu a:hover {
+        background-color: #32c1ed;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width:990px) and (max-width:1008px) {
+    .caidan {
+        display: none;
+    }
+    .nav-right {
+        display: none;
+    }
+    .log {
+        float: left;
+        display: block;
+        background: url("../../image/yue-sprit001.png") no-repeat;
+        width: 152px;
+        height: 60px;
+        background-position: -202px 0px;
+        margin-top: 11px;
+        margin-left: 40px;
+    }
+    .zhunye {
+        font-size: 22px;
+        font-weight: 300;
+        color: #35c1ec;
+        line-height: 80px;
+        margin-left: 10px;
+    }
+}
+
+
+/* ＊＊＊＊＊导航 小屏结束 大屏开始 ＊＊＊＊＊＊＊＊*/
+
+@media screen and (min-width:1008px) and (max-width:1200px) {
+    .caidan {
+        display: none;
+    }
+    .nav {
+        /* width: 100%; */
+        background: #fff;
+        height: 80px;
+        /* border:1px solid #f5f5f5; */
+    }
+    .nav-left {
+        float: left;
+    }
+    .nav .nav-left .log {
+        float: left;
+        display: block;
+        width: 152px;
+        height: 60px;
+        background: url("../../image/yue-sprit001.png") no-repeat -202px 0px;
+        margin-top: 10px;
+        margin-left: 55px;
+    }
+    .nav .nav-left .zhunye {
+        width: 149px;
+        height: 80px;
+        padding-left: 10px;
+        line-height: 80px;
+        font-size: 22px;
+        color: #35c1ec;
+    }
+    /* ＊＊＊＊＊导航右边＊＊＊＊＊＊＊＊＊＊ */
+    .nav-right {
+        float: right;
+        height: 80px;
+        padding-top: 20px;
+        margin-right: 20px;
+    }
+    .nav-right1 {
+        float: left;
+    }
+    .nav-right1 ul {
+        float: left;
+    }
+    .nav-right ul li {
+        float: left;
+        margin: 10px 3px 0;
+        /* padding:6px; */
+        font-size: 16px;
+    }
+    .nav-right .denglu {
+        float: left;
+        padding-right: 15px;
+        /* padding:6px; */
+        margin: 10px 3px 0;
+        font-size: 16px;
+    }
+    .lvxian {
+        float: left;
+        width: 1px;
+        height: 25px;
+        background-color: #2fb4e9;
+        margin: 10px 3px 0px;
+    }
+    .nav-right .nav-right1 ul li a,
+    .nav-right .denglu a {
+        color: #555;
+        text-decoration: none;
+        padding: 6px 6px;
+    }
+    .nav-right .nav-right1 ul li a:hover,
+    .nav-right .denglu a:hover {
+        background: #32c1ed;
+        color: #fff;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .caidan {
+        display: none;
+    }
+    .nav {
+        width: 100%;
+        height: 115px;
+        background: #FFF;
+    }
+    .nav .nav-left {
+        float: left;
+    }
+    .nav .nav-left .log {
+        float: left;
+        width: 195px;
+        height: 80px;
+        background: url("../../image/yue-sprit001.png") no-repeat 0 0;
+        vertical-align: middle;
+        margin-top: 17.5px;
+        margin-left: 80px;
+    }
+    .nav .nav-left .zhunye {
+        padding-left: 20px;
+        font-size: 26px;
+        line-height: 115px;
+        color: #35c1ec;
+    }
+    /* ＊＊＊＊＊＊＊＊＊导航右边 ＊＊＊＊＊＊＊＊＊＊＊*/
+    .nav .nav-right {
+        display: block;
+        float: right;
+        height: 115px;
+        padding-right: 15px;
+        /* border-bottom:1px solid #ccc; */
+    }
+    .nav .nav-right .nav-right1 {
+        float: left;
+    }
+    .nav .nav-right .nav-right1 ul {
+        float: left;
+        margin: 50px 3px;
+        font-size: 16px;
+    }
+    .nav .nav-right .nav-right1 ul li {
+        float: left;
+        /* padding:3px 10px; */
+    }
+    .nav-right .lvxian {
+        float: left;
+        width: 1px;
+        height: 25px;
+        background: #2fb4e9;
+        margin: 50px 5px;
+    }
+    .nav-right .denglu {
+        float: left;
+        font-size: 16px;
+        margin: 50px 3px;
+    }
+    .nav-right .denglu a,
+    .nav .nav-right .nav-right1 ul li a {
+        padding: 5px 13px;
+        color: #555;
+        text-decoration: none;
+    }
+    .nav-right .denglu a:hover,
+    .nav .nav-right .nav-right1 ul li a:hover {
+        background: #32c1ed;
+        color: #FFF;
+        border-radius: 6px;
+    }
+}
+
+
+/*＊＊＊＊＊＊＊＊＊ 导航结速 轮播图开始 ＊＊＊＊＊＊＊＊*/
+
+* {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+.myscroll {
+    z-index: 100;
+}
+
+
+/* <!-- 底部长条 --> */
+
+.strip li {
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    border: 1px solid #f1a179;
+    background: #f1a179;
+    border-radius: 0;
+}
+
+.strip .active {
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    background: #FFF;
+    margin-bottom: 1px;
+}
+
+
+/**＊＊＊＊＊＊＊＊＊＊ 悦活动 主体内容开始＊＊＊＊＊＊＊＊＊ */
+
+.container-wai {
+    width: 100%;
+    background: #F5F5F5;
+    height: auto;
+}
+
+
+/* @media screen and (max-width) */
+
+.container-wai .container {
+    width: 90%;
+}
+
+.container h1 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.yuehuodong {
+    margin-top: 40px;
+}
+
+.demo {
+    height: 260px;
+    padding: 15px;
+    /* box-sizing:border-box; */
+    margin: 15px 0;
+    /* padding:0; */
+}
+
+.demo a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ccc;
+}
+
+.demo1 {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-size: cover !important;
+    transition: all .5s;
+    /* background-repeat: none; */
+}
+
+.wenti {
+    background-position: -166px 6px !important;
+}
+
+.demo1_1 {
+    overflow: hidden;
+}
+
+
+/* .demo1 img{
+    width: 100%;
+    height: 200px;
+   
+} */
+
+.weiyi {
+    background-position: 0px -122px;
+}
+
+.demo2 {
+    background: #FFF;
+    height: 58px;
+    /* padding-bottom:10px; */
+    /* margin-bottom:10px; */
+}
+
+.demo a:hover {
+    border: 1px solid #20B4E0;
+}
+
+.fada {
+    display: block;
+    position: relative;
+    top: -93px;
+    height: 330px !important;
+    background-size: 100%;
+}
+
+
+/*************** 分页 ***********/
+
+.fengye {
+    width: 100%;
+    /* float:right; */
+    /* margin-right:-15px; */
+}
+
+.baoguo {
+    margin-right: -15px;
+    width: 500px;
+    float: right;
+}
+
+.row1 {
+    /* float:right; */
+    width: 165px;
+}
+
+.input-group {
+    width: 150px;
+}
+
+
+/* .pull-right{
+    width: 175px;
+} */
+
+
+/* ********跳转到 *********/
+
+.fengye .row1 .row .col-lg-2 {
+    margin: 20px 0 0 10px;
+    display: inline-block;
+}
+
+.Page {
+    float: right;
+    width: 150px;
+}
+
+.moren a {
+    background-color: #337ba7 !important;
+    color: #FFF !important;
+    border: 1px solid #337ba7 !important;
+    margin-left: 0px;
+}
+
+
+/*＊＊＊＊＊＊＊＊＊＊ foot部分＊＊＊＊＊＊＊ */
+
+.foot {
+    width: 100%;
+    height: auto;
+    background: #efefef;
+    color: #7a7a7a;
+    padding-bottom: 20px;
+}
+
+.foot_bao {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.foot a {
+    display: block;
+    color: #7a7a7a;
+}
+
+.color_1 {
+    color: #333;
+    font-size: 17px;
+}
+
+.foot_left,
+.middle {
+    margin: 30px 0;
+}
+
+.foot_right {
+    text-align: right;
+    margin-top: 120px;
+}
+
+.foot_bao .row a {
+    margin: 8px 0;
+    text-decoration: none;
+}
+
+.foot_bao a:hover {
+    color: #3169b0;
+}
+
+@media screen and (max-width:768px) {
+    .foot_bao {
+        width: 95%;
+    }
+    .container-wai .container {
+        width: 90%;
+    }
+    .middle {
+        margin-top: 0;
+    }
+    .foot_right {
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+
+
+/* *＊＊＊＊＊＊＊＊＊回到顶部＊＊＊＊＊＊＊＊＊＊ */
+
+.dingbu {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    width: 50px;
+    height: 170px;
+}
+
+.jiantou,
+.weixingke,
+.weixingtu span {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+.jiantou {
+    position: absolute;
+    top: 0px;
+    font-size: 20px;
+    color: #fff;
+    background: #3890ff;
+    /* display:none; */
+    /* cursor:pointer; */
+}
+
+.weixingtu {
+    /* display:none; */
+    border-radius: 24px;
+    /* cursor:pointer; */
+}
+
+.weixingtu span {
+    position: absolute;
+    top: 53px;
+    display: block;
+    font-size: 25px;
+    color: #fff;
+    background: #3890ff;
+}
+
+.weixingkefu {
+    display: none;
+    margin-top: 53px;
+    border: 1px solid #3890ff;
+    font-size: 14px;
+    color: #3890ff;
+    background: #fff;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.kefu {
+    width: 41px;
+    height: 40px;
+    text-align: center;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+
+/* 二维码 */
+
+.erweima {
+    display: none;
+    position: fixed;
+    right: 60px;
+    bottom: 0px;
+    width: 150px;
+    height: 200px;
+    background: #fff;
+    border: 1px solid #3980ff;
+}
+
+.erweima img {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+}
+
+.tu {
+    width: 120px;
+    height: 120px;
+}
+
+.saoma {
+    margin: 0px 15px;
+    text-align: center;
+    width: 120px;
+    height: 14px;
+}
+
+
+/* ＊＊＊＊＊登录注册小屏 ＊＊＊＊*/
+
+@media screen and ( max-width:768px) and (min-width:400px) {
+    .container__denglu {
+        display: none;
+    }
+    .yc1 {
+        display: none;
+    }
+    .yc2 {
+        /* display:none; */
+    }
+    .x {
+        width: 100%;
+        display: block;
+        float: right;
+        height: 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .guanbi {
+        float: right;
+        font-weight: 300;
+        color: #ccc;
+    }
+    .container__denglu {
+        position: fixed;
+        top: 10px;
+        width: 95%;
+        /* margin:0 auto; */
+        left: 2.5%;
+        background: #fff;
+        z-index: 10000;
+        border-radius: 5px;
+    }
+    .denglu__ {
+        margin-top: 20px;
+        width: 95%;
+        height: 119px;
+        margin-left: 2.5%;
+    }
+    .denglu__ button {
+        float: left;
+        height: 39px;
+        width: 50%;
+        border: none;
+        margin: 0 auto;
+        padding: 6px 12px;
+        background: 0;
+        font-size: 16px;
+        color: #999;
+        list-style: none;
+        outline: none;
+        /* text-transform: none; */
+    }
+    .denglu__ button:first-child {
+        color: #2fb4e9;
+        border-bottom: 2px solid #2fb4e9;
+    }
+    .dengluxian {
+        width: 100%;
+        height: 60px;
+        /* margin-left:2.5%; */
+        border-bottom: 1px solid #ccc;
+    }
+    /* ＊＊＊＊验证手机 ＊＊＊＊*/
+    .yanz {
+        width: 100%;
+        height: 56px;
+    }
+    .shouji {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+    .shouji input {
+        padding: 0 2.5%;
+        width: 90%;
+        /* height: 56px; */
+        line-height: 4em;
+        outline: none;
+    }
+    /*＊＊＊＊＊ 验证码 ＊＊＊＊*/
+    .huoqu_wei {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+    .huoqu {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .huoqu input:first-child {
+        line-height: 4em;
+    }
+    .huoquyanzm {
+        float: right;
+        width: 80px;
+        height: 32px;
+    }
+    .huoqu button {
+        float: right;
+        background: none;
+        border-radius: 5px;
+        outline: none;
+        padding: 4px;
+        background: #2fb4e9;
+        margin-top: 14px;
+    }
+    /* ＊＊＊＊＊＊＊＊＊快捷登录＊＊＊＊＊＊＊＊＊＊ */
+    .shortcut_wai {
+        width: 95%;
+        /* height: 90px; */
+        margin-left: 2.5%;
+        border-bottom: 1px solid #ccc;
+    }
+    .shortcut {
+        color: #FFF;
+        width: 100%;
+        background: #2fb4e9;
+        line-height: 30px;
+        margin-top: 30px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .weixindl {
+        line-height: 4em;
+    }
+    .weixing {
+        width: 120px;
+        /* height: 24px;
+        line-height:4em; */
+        margin: 0 auto;
+    }
+    .weixing a {
+        text-decoration: none;
+        color: #333;
+    }
+    /* ＊＊＊＊＊小屏注册＊＊＊＊＊ */
+    /* ＊＊＊密码＊＊＊ */
+    .PASS {
+        width: 90%;
+        margin-left: 2.5%;
+        line-height: 4em;
+        outline: none;
+    }
+    /* -- 下次自动登录 -- */
+    .shortcut_wai {
+        margin-top: 28px;
+        /* height: 78px; */
+    }
+    .zidongdenglu {
+        float: left;
+    }
+    .xinyonghu {
+        float: right;
+    }
+    .signin {
+        width: 100%;
+        line-height: 32px;
+        background: #2fb4e9;
+        border-radius: 4px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container__denglu {
+        width: 368px;
+    }
+    .container__denglu {
+        display: none;
+    }
+    .yc1 {
+        display: none;
+    }
+    .yc2 {
+        /* display:none; */
+    }
+    .x {
+        width: 100%;
+        display: block;
+        float: right;
+        height: 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .guanbi {
+        float: right;
+        font-weight: 300;
+        color: #ccc;
+    }
+    .container__denglu {
+        position: fixed;
+        top: 50%;
+        width: 368px;
+        margin: 0 auto;
+        left: 50%;
+        background: #fff;
+        z-index: 10000;
+        border-radius: 5px;
+        transform: translate(-50%, -50%);
+    }
+    .denglu__ {
+        margin-top: 20px;
+        width: 95%;
+        height: 119px;
+        margin-left: 2.5%;
+    }
+    .denglu__ button {
+        float: left;
+        height: 39px;
+        width: 50%;
+        border: none;
+        margin: 0 auto;
+        padding: 6px 12px;
+        background: 0;
+        font-size: 16px;
+        color: #999;
+        list-style: none;
+        outline: none;
+        /* text-transform: none; */
+    }
+    .denglu__ button:first-child {
+        color: #2fb4e9;
+        border-bottom: 2px solid #2fb4e9;
+    }
+    .dengluxian {
+        width: 100%;
+        height: 60px;
+        /* margin-left:2.5%; */
+        border-bottom: 1px solid #ccc;
+    }
+    /* ＊＊＊＊验证手机 ＊＊＊＊*/
+    .yanz {
+        width: 100%;
+        height: 56px;
+    }
+    .shouji {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+    .shouji input {
+        padding: 0 2.5%;
+        width: 90%;
+        /* height: 56px; */
+        line-height: 4em;
+        outline: none;
+    }
+    /*＊＊＊＊＊ 验证码 ＊＊＊＊*/
+    .huoqu_wei {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+    .huoqu {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .huoqu input:first-child {
+        line-height: 4em;
+    }
+    .huoquyanzm {
+        float: right;
+        width: 80px;
+        height: 32px;
+    }
+    .huoqu button {
+        float: right;
+        background: none;
+        border-radius: 5px;
+        outline: none;
+        padding: 4px;
+        background: #2fb4e9;
+        margin-top: 14px;
+    }
+    /* ＊＊＊＊＊＊＊＊＊快捷登录＊＊＊＊＊＊＊＊＊＊ */
+    .shortcut_wai {
+        width: 95%;
+        /* height: 90px; */
+        margin-left: 2.5%;
+        border-bottom: 1px solid #ccc;
+    }
+    .shortcut {
+        color: #FFF;
+        width: 100%;
+        background: #2fb4e9;
+        line-height: 30px;
+        margin-top: 30px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .weixindl {
+        line-height: 4em;
+    }
+    .weixing {
+        width: 120px;
+        /* height: 24px;
+        line-height:4em; */
+        margin: 0 auto;
+    }
+    .weixing a {
+        text-decoration: none;
+        color: #333;
+    }
+    /* ＊＊＊＊＊大屏注册＊＊＊＊＊ */
+    /* ＊＊＊密码＊＊＊ */
+    .PASS {
+        width: 90%;
+        margin-left: 2.5%;
+        line-height: 4em;
+        outline: none;
+    }
+    /* -- 下次自动登录 -- */
+    .shortcut_wai {
+        margin-top: 28px;
+        /* height: 78px; */
+    }
+    .zidongdenglu {
+        float: left;
+    }
+    .xinyonghu {
+        float: right;
+    }
+    .signin {
+        width: 100%;
+        line-height: 32px;
+        background: #2fb4e9;
+        border-radius: 4px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+}
